@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>test</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="full_wrap">
+		<div class="wrap">
+			<h2>this is only for test</h2>
+		</div>
+	</div>
+	<div class="full_wrap content_bg">
+		<div class="wrap content">
+			<h2>this is test</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="full_wrap box_bg">
+		<div class="wrap box" id="sticker">
+			
+			<div>
+				<h2>Box</h2>
+			</div>
+		</div>
+	</div>
+<div class="full_wrap bfaf_bg">
+		<div class="wrap bfaf">
+			
+			<div>
+				<h2>Box2</h2>
+			</div>
+		</div>
+	</div>
+	<div class="full_wrap baf_bg">
+		<div class="wrap baf">
+			
+			<a href="#" class="button">
+				<span class="shuso">Click Me</span>
+			</a>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	
+<script type="text/javascript">
+		$(document).ready(function() {
+			var s = $("#sticker");
+			var pos = s.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");	
+				}
+			});
+		});
+</script> 
+</body>
+</html> 
